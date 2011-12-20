@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+
+  <title>zelda180/GVS @ GitHub</title>
+
+  <style type="text/css">
+    body {
+      margin-top: 1.0em;
+      background-color: #003cff;
+      font-family: Helvetica, Arial, FreeSans, san-serif;
+      color: #ffffff;
+    }
+    #container {
+      margin: 0 auto;
+      width: 700px;
+    }
+    h1 { font-size: 3.8em; color: #ffc300; margin-bottom: 3px; }
+    h1 .small { font-size: 0.4em; }
+    h1 a { text-decoration: none }
+    h2 { font-size: 1.5em; color: #ffc300; }
+    h3 { text-align: center; color: #ffc300; }
+    a { color: #ffc300; }
+    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+    .download { float: right; }
+    pre { background: #000; color: #fff; padding: 15px;}
+    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    .footer { text-align:center; padding-top:30px; font-style: italic; }
+  </style>
+</head>
+
+<body>
+  <a href="https://github.com/zelda180/GVS"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+
+  <div id="container">
+
+    <div class="download">
+      <a href="https://github.com/zelda180/GVS/zipball/master">
+        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
+      <a href="https://github.com/zelda180/GVS/tarball/master">
+        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
+    </div>
+
+    <h1><a href="https://github.com/zelda180/GVS">GVS</a>
+      <span class="small">by <a href="https://github.com/zelda180">zelda180</a></span></h1>
+
+    <div class="description">
+      GIFTSnMOREweb.com Video Script (GVS) is a "YouTube Clone" script. With many advanced features like Multi Server Support, Mobile Support (for Iphones, Ipads, Android, Smart Phones & Tablets) and so much more. 
+    </div>
+
+    
+      <p>GIFTSnMOREweb.com Video Script (GVS)</p>
+    
+
+    
+      <h2>Dependencies</h2>
+      <p>~Server Requirements~
+
+    Linux Server (some old distributions are not supported)
+    Cpanel Control Panel (may work with others but HAVE NOT been tested)
+    VPS or Dedicated Hosting is HIGHLY sugested (visit giftsnmoreweb.com for hosting info)
+    Apache Web Server (version 2.2.21 or higher
+    MySQL (version 5 or higher)
+    PHP 5.2.9 or higher (may work on some older versions of PHP)
+    GD Library 2 or higher
+    mbstring (http://in.php.net/mbstring)
+    FFmpeg (http://ffmpeg.org)
+    FFmpeg With h246 support (for MP4 & Mobile Video Conversion)
+    qt-faststart (for MP4 & Mobile Video Conversion)
+    Mplayer + Mencoder (http://www.mplayerhq.hu/design7/dload.html)
+    Flvtool2 (http://inlet-media.de/flvtool2)
+    yamdi (optional)
+    Libogg + Libvorbis (http://www.xiph.org/downloads)
+    LAME MP3 Encoder (http://lame.sourceforge.net)
+    .htaccess support (AllowOverride All)
+    curl
+
+PHP Configuration
+
+    safe_mode = off
+    register_globals = off
+    open_basedir = (no value)
+    output_buffering = on
+    upload_max_filesize = 200M (or more)
+    post_max_size = 200M (or more)
+    max_execution_time = 6000 (or more)
+    max_input_time = 6000 (or more)
+    memory_limit = 128M (or more)
+    display_errors = On
+    file_uploads = On
+    session.gc_maxlifetime = 14000 (or more)
+
+~Web Server~
+
+GVS will work on latest Linux versions. If your OS is old, you will find it difficult to install latest ffmpeg, mencoder, etc... We suggest you to get hosting with cpanel. With out any control panel works well too. We found Plesk control panel have problem with progress bar.
+
+~Suggested Web Host~
+
+GIFTSnMOREweb.com video hosting plans has all software needed for GVS pre installed. Please visit  giftsnmoreweb.com/hosting
+
+~If you need us to install GVS for you, contact us at webmaster@giftsnmoreweb.com .~
+</p>
+    
+
+    
+      <h2>Install</h2>
+      <p>Installation
+
+1. Unzip the vshare2.zip and upload all the files to your web server in BINARY Mode. By default FTP software will use ASCII mode, so you should set it to BINARY mode. If not you will get Fatal error: Unable to read xxxx bytes
+
+2. Make sure your server have proper php settings as per http://buyscripts.in/requirements.html
+
+3. Change permission of following folders and files to 777 (755 for servers running in phpsuexe mod). You can do this with your FTP client software or control panel provided by web host.
+
+chimg
+flvideo
+include
+include/config.php
+mvideo
+photo
+templates_c
+templates
+thumb
+video
+
+To set chmod permissions of these folders in your FTP software ... right click with your mouse on the folder you wish to change
+Select "properties" at the very bottom of the box that will open.
+Now enter 777 in the number box or check all squares.
+
+4. Create a MySQL database in your control panel. If you are using cpanel control panel, refer this tutorial for creating MySQL. If you use different control panel, ask your web host.
+
+5. Run installer at
+
+http://yourdomain.extn/install/index.php
+
+6. After installation, login to admin control panel at
+
+http://yourdomain.extn/admin/index.php
+
+User: admin
+Pass: buygvs
+
+7. Delete "install" folder from server.
+
+8. Change permission of folder "include" and file "include/config.php" to 644
+
+9. If your server support perl scripts, you can enable the Upload Progress bar.
+
+10. You need to set cronjob for processing video in batch mode or importing video.</p>
+    
+
+    
+      <h2>License</h2>
+      <p>Paid Script</p>
+    
+
+    
+      <h2>Authors</h2>
+      <p>  GIFTSnMOREweb.com (zelda180)    </p>
+    
+
+    
+      <h2>Contact</h2>
+      <p> (webmaster@giftsnmoreweb.com)<br/>      </p>
+    
+
+    <h2>Download</h2>
+    <p>
+      You can download this project in either
+      <a href="https://github.com/zelda180/GVS/zipball/master">zip</a> or
+      <a href="https://github.com/zelda180/GVS/tarball/master">tar formats.
+    </p>
+    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
+      by running:
+      <pre>$ git clone git://github.com/zelda180/GVS</pre>
+    </p>
+
+    <div class="footer">
+      get the source code on GitHub : <a href="https://github.com/zelda180/GVS">zelda180/GVS</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
